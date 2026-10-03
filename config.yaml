@@ -1,0 +1,11 @@
+raw_data_path: "raw_data"
+input_file: "processed_data/comments_data.xlsx"
+output_file: "output/comments_with_sentiment.xlsx"
+model_name: "nlptown/bert-base-multilingual-uncased-sentiment"
+
+mapping:
+  "1 star": "Negative"
+  "2 stars": "Negative"
+  "3 stars": "Neutral"
+  "4 stars": "Positive"
+  "5 stars": "Positive"
