@@ -1,0 +1,23 @@
+2026-10-03 23:04:23,334 - ERROR - Failed to load data: [Errno 2] No such file or directory: 'data/comments_data.xlsx'
+2026-10-03 23:04:45,235 - INFO - Loaded 399 rows from data/comments_data.xlsx
+2026-10-03 23:04:45,628 - INFO - HTTP Request: GET https://huggingface.co/api/models/nlptown/bert-base-multilingual-uncased-sentiment "HTTP/1.1 200 OK"
+2026-10-03 23:04:46,958 - INFO - HTTP Request: GET https://huggingface.co/api/models/nlptown/bert-base-multilingual-uncased-sentiment/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-03 23:04:47,266 - INFO - HTTP Request: GET https://huggingface.co/api/models/nlptown/bert-base-multilingual-uncased-sentiment/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-03 23:04:47,573 - INFO - HTTP Request: GET https://huggingface.co/api/models/nlptown/bert-base-multilingual-uncased-sentiment "HTTP/1.1 200 OK"
+2026-10-03 23:05:31,365 - INFO - Analysis complete. File created: output/comments_with_sentiment.xlsx
+2026-10-03 23:16:14,670 - INFO - Loaded 399 rows from processed_data/comments_data.xlsx
+2026-10-03 23:16:15,091 - INFO - HTTP Request: GET https://huggingface.co/api/models/nlptown/bert-base-multilingual-uncased-sentiment "HTTP/1.1 200 OK"
+2026-10-03 23:16:17,241 - INFO - HTTP Request: GET https://huggingface.co/api/models/nlptown/bert-base-multilingual-uncased-sentiment/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-03 23:16:17,541 - INFO - HTTP Request: GET https://huggingface.co/api/models/nlptown/bert-base-multilingual-uncased-sentiment/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-03 23:16:17,949 - INFO - HTTP Request: GET https://huggingface.co/api/models/nlptown/bert-base-multilingual-uncased-sentiment "HTTP/1.1 200 OK"
+2026-10-03 23:17:09,810 - INFO - Analysis complete. File created: output/comments_with_sentiment.xlsx
+2026-10-03 23:19:57,988 - INFO - Loaded 399 rows from processed_data/comments_data.xlsx
+2026-10-03 23:19:58,354 - INFO - HTTP Request: GET https://huggingface.co/api/models/nlptown/bert-base-multilingual-uncased-sentiment "HTTP/1.1 200 OK"
+2026-10-03 23:20:00,957 - INFO - HTTP Request: GET https://huggingface.co/api/models/nlptown/bert-base-multilingual-uncased-sentiment/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-03 23:20:01,190 - INFO - HTTP Request: GET https://huggingface.co/api/models/nlptown/bert-base-multilingual-uncased-sentiment/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-03 23:20:17,696 - INFO - Loaded 399 rows from processed_data/comments_data.xlsx
+2026-10-03 23:20:18,017 - INFO - HTTP Request: GET https://huggingface.co/api/models/nlptown/bert-base-multilingual-uncased-sentiment "HTTP/1.1 200 OK"
+2026-10-03 23:20:19,611 - INFO - HTTP Request: GET https://huggingface.co/api/models/nlptown/bert-base-multilingual-uncased-sentiment/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-10-03 23:20:19,923 - INFO - HTTP Request: GET https://huggingface.co/api/models/nlptown/bert-base-multilingual-uncased-sentiment/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-10-03 23:20:20,226 - INFO - HTTP Request: GET https://huggingface.co/api/models/nlptown/bert-base-multilingual-uncased-sentiment "HTTP/1.1 200 OK"
+2026-10-03 23:21:02,557 - INFO - Analysis complete. File created: output/comments_with_sentiment.xlsx
