@@ -1,39 +1,80 @@
-This project provides a production‑ready pipeline for analyzing sentiment in YouTube comments. It automates the process of:
+# 📊 YouTube Comments Sentiment Analyser
 
-Collecting and merging raw comment data from multiple Excel files.
+## Overview
+The **YouTube Comments Sentiment Analyser** is a production‑ready pipeline for processing and classifying sentiment in YouTube comments. It automates the workflow from raw data ingestion to structured sentiment output, making it easier to understand audience reactions and engagement.
 
-Running sentiment classification using HuggingFace Transformers (nlptown/bert-base-multilingual-uncased-sentiment).
+## Features
+- Merge multiple raw Excel files into one dataset
+- Add metadata (source file, processed date)
+- Run sentiment analysis using HuggingFace Transformers (`nlptown/bert-base-multilingual-uncased-sentiment`)
+- Map star ratings into business‑friendly categories: Negative, Neutral, Positive
+- Export results to Excel for reporting
+- Configurable via `config.yaml`
+- Logging for transparency and debugging
 
-Mapping star ratings into business‑friendly categories (Negative, Neutral, Positive).
+## Project Structure
+youtube_comments_sentiment_analyser/
+│── config.yaml
+│── read_data.py
+│── sentiment_analysis.py
+│── requirements.txt
+│── logs/
+│    └── pipeline.log
+│── raw_data/
+│    └── *.xlsx
+│── processed_data/
+│    └── comments_data.xlsx
+│── output/
+│    └── comments_with_sentiment.xlsx
 
-Exporting clean, structured results for downstream analysis or reporting.
+## Configuration
+Edit `config.yaml` to set paths and model:
+```yaml
+raw_data_path: "raw_data"
+input_file: "processed_data/comments_data.xlsx"
+output_file: "output/comments_with_sentiment.xlsx"
+model_name: "nlptown/bert-base-multilingual-uncased-sentiment"
 
-✨ Features
-Config‑driven workflow: All paths, model names, and mappings are defined in config.yaml.
+mapping:
+  "1 star": "Negative"
+  "2 stars": "Negative"
+  "3 stars": "Neutral"
+  "4 stars": "Positive"
+  "5 stars": "Positive"
 
-Data ingestion: Reads multiple .xlsx files from a raw data folder and combines them into a single dataset.
+Installation:
 
-Sentiment analysis: Uses HuggingFace pipeline with PyTorch backend.
+	conda create -n sentiment python=3.10
+	conda activate sentiment
+	pip install -r requirements.txt
 
-Custom mapping: Converts star ratings (1–5) into simplified sentiment categories.
+Usage:
+python sentiment_analysis.py
 
-Logging: Tracks progress and errors in logs/.
 
-Modular scripts:
 
-read_data.py → merges raw Excel files into processed_data/comments_data.xlsx
 
-sentiment_analysis.py → runs classification and saves results to output/comments_with_sentiment.xlsx
 
-🛠️ Tech Stack
-Python 3.10+
 
-Pandas for data handling
 
-Transformers (HuggingFace) for NLP
 
-PyTorch as ML backend
 
-YAML for configuration
 
-OpenPyXL for Excel I/O
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
